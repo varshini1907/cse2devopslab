@@ -1,0 +1,220 @@
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~ (main)
+$ mkdir 2devopslab
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~ (main)
+$ cd 2devopslab
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git init
+Initialized empty Git repository in C:/Users/GVPW/2devopslab/.git/
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (master)
+$ echo "welcome" >test.txt
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (master)
+$ git commit -m "initial commit"
+[master (root-commit) 19e0609] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (master)
+$ git branch -M main
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ ls
+test.txt
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin "https://github.com/varshini1907/cse2devopslab.git"
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote -v
+origin  https://github.com/varshini1907/cse2devopslab.git (fetch)
+origin  https://github.com/varshini1907/cse2devopslab.git (push)
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push-u
+git: 'push-u' is not a git command. See 'git --help'.
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin "https://github.com/varshini1907/cse2devopslab.git"
+error: remote origin already exists.
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin https://github.com/varshini1907/cse2devopslab.git
+error: remote origin already exists.
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin https://github.com/varshini1907/cse2devopslab.git
+error: remote origin already exists.
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ ^C
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote -v
+origin  https://github.com/varshini1907/cse2devopslab.git (fetch)
+origin  https://github.com/varshini1907/cse2devopslab.git (push)
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote remove origin
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote add origin https://github.com/varshini1907/cse2devopslab.git
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git remote -v
+origin  https://github.com/varshini1907/cse2devopslab.git (fetch)
+origin  https://github.com/varshini1907/cse2devopslab.git (push)
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+remote: Permission to varshini1907/cse2devopslab.git denied to lipi-mallika.
+fatal: unable to access 'https://github.com/varshini1907/cse2devopslab.git/': The requested URL returned error: 403
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+
+
+
+Merge branch 'main' of https://github.com/varshini1907/cse2devopslab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+From https://github.com/varshini1907/cse2devopslab
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 532 bytes | 532.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/varshini1907/cse2devopslab.git
+   b2b45f7..b7a295b  main -> main
+
+GVPW@DESKTOP-FRHSCCA MINGW64 ~/2devopslab (main)
+$
